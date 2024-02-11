@@ -29,6 +29,7 @@ class Clock():
         y = r * cos(radians(theta))
         return self.width//2 + x, self.height//2 - y
     
+    
     def draw_circle(self, screen):
         pygame.draw.circle(self.screen, self.orange, self.center, self.clock_redius - 10, 5)
          
@@ -76,7 +77,7 @@ class Clock():
     def run(self):
         while True:
             for event in pygame.event.get():
-                if event.type == pygame.quit:
+                if event.type == pygame.QUIT:
                     exit()
                     
                     
