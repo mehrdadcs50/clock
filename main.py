@@ -6,7 +6,7 @@ from datetime import datetime
 class Clock():
     def __init__(self):
         self.width, self.height = 600, 600
-        self.orange = (120, 56, 7)
+        self.orange = (235, 152, 52)
         self.black = (20, 19, 19)
         self.FPS = 60
         self.center = (self.width//2, self.height//2)
@@ -31,7 +31,7 @@ class Clock():
     
     
     def draw_circle(self, screen):
-        pygame.draw.circle(self.screen, self.orange, self.center, self.clock_redius - 10, 5)
+        pygame.draw.circle(self.screen, self.orange, self.center, self.clock_redius - 10, 3)
          
         pygame.draw.circle(self.screen, self.orange, self.center, 7)
         
